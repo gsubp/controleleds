@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Controle de Leds</string>
+    <string name="action_settings">Definir IP</string>
+    <string name="amareloBtn">Led Amarelo</string>
+    <string name="vemelhoBtn">Led Vermelho</string>
+    <string name="verdeBtn">Led Verde</string>
+    <string name="textView">Clique para LIGAR ou DESLIGAR os Leds</string>
+</resources>

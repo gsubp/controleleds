@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.haelor.controledeleds.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:text="@string/textView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/led_g_off"
+        android:id="@+id/verdeImView"
+        android:layout_below="@+id/amareloImView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/led_a_on"
+        android:id="@+id/amareloImView"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/vermelhoImView"
+        android:layout_alignLeft="@+id/verdeImView"
+        android:layout_alignStart="@+id/verdeImView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        app:srcCompat="@drawable/led_v_on"
+        android:id="@+id/vermelhoImView"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/amareloImView"
+        android:layout_alignStart="@+id/amareloImView" />
+</LinearLayout>
